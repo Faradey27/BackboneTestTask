@@ -1,0 +1,168 @@
+.layout { 
+	position: relative;
+	min-height: 30px; 
+}
+
+.layout .col1 { 
+	position: absolute;
+	background: #C7E3E4; 
+	width: 200px; 
+}
+.layout .col2 { 
+	position: absolute;
+	background: #E0D2C7; 
+	left: 200px; 
+	right: 200px;
+}
+.layout .col3 { 
+	position: absolute;
+	background: #ECD5DE; 
+	width: 200px; 
+	right: 0px; 
+}
+
+#header {
+	margin-top:15px;
+	height: 32px;
+  	z-index: 1;
+  	background-color: #D5BAE4;
+}
+
+#header ul {
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#header ul a {
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+}
+
+#header ul li {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#header ul li.current-menu-item {
+	background:#ddd;
+}
+
+#header ul li:hover {
+	background:#f6f6f6;
+}
+
+#header ul ul {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#ddd;
+	padding:0;
+	z-index: 2;
+}
+
+#header ul ul li {
+	float:none;
+	width:200px;
+}
+
+#header ul ul a {
+	line-height:120%;
+	padding:10px 15px;
+}
+
+#header ul ul ul {
+	top:0;
+	left:100%
+}
+
+#header ul li:hover > ul {
+	display:block;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.wrapper {
+	padding-bottom: 50px; /*footer height*/
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    min-height: 50px;
+    width: 100%;
+    background-color: #D5BAE4;
+}
+
+.td-col-1 {
+	width: 100px;
+	min-width: 100px;
+}
+
+.td-col-2 {
+	width: 100px;
+	min-width: 100px;
+}
+
+.input-wrap {
+	float: left;
+  	height: 30px;
+  	width: 100%;
+  	display: -webkit-box;
+  	isplay: -webkit-flex;
+  	display: -ms-flexbox;
+  	display: flex;
+}
+
+.input-wrap input {
+  	width: 100%;
+  	margin-left: 5px;
+}
+
+.input-wrap label {
+	flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+}
+
+#modal {
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	position: fixed;
+	opacity: 0;
+	z-index: 3;
+	transform: translate3d(0,-800px, 0);
+	left: calc(50% - 150px);/* - width*/
+	top: calc(50% - 150px);/* - height*/
+}
+
+#modal:target {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+	transition: opacity linear 1s, transform linear 0.7s;
+}
+
+#button {
+	padding: 10px;
+	display: inline-block;
+	background-color: blue;
+	margin-top: 12px;
+	position: relative;
+  	text-decoration: none;
+}
+

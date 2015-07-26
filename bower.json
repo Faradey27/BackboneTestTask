@@ -1,0 +1,11 @@
+{
+  "name": "testtask",
+  "version": "0.0.1",
+  "description": "fast test task for ukr",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3",
+    "backbone": "~1.2.1"
+  },
+  "devDependencies": {}
+}

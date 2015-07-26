@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+  		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 		<link rel="stylesheet" href="style.css" />
+  		<title>Something</title>
+ 	</head>
+ <body>
+ 	<div id="modal"></div>
+ 	<div class="wrapper">
+	  	<nav id="header">
+			<ul>
+			  	<li class="current-menu-item">
+			  		<a href="#">Home</a>
+			  	</li>
+			  	<li>
+			  	  	<a href="#">Menu 1</a>
+			  	  	<ul>
+			  	  	  	<li><a href="#">Sub Menu 1</a></li>
+			  	  	  	<li><a href="#">Sub Menu 2</a></li>
+			  	  	  	<li><a href="#">Sub Menu 3</a></li>
+			  	  	  	<li><a href="#">Sub Menu 4</a></li>
+			  	  	  	<li><a href="#">Sub Menu 5</a></li>
+			  	  	</ul>
+			  	</li>
+			  	<li>
+			  	  	<a href="#">Menu 2</a>
+			  	  	<ul>
+			  	  	  	<li><a href="#">Sub Menu 1</a></li>
+			  	  	  	<li><a href="#">Sub Menu 2</a></li>
+			  	  	  	<li><a href="#">Sub Menu 3</a></li>
+			  	  	  	<li><a href="#">Sub Menu 4</a></li>
+			  	  	  	<li><a href="#">Sub Menu 5</a></li>
+			  	  	</ul>
+			  	</li>
+			</ul>
+		</nav>
+	  	<div class="layout">
+	  	 	<div class="col1">
+	  	 		<form target="#modal">
+	  	 			<div class="input-wrap">
+	  	 				<label for="first">
+	  	 					Subject
+	  	 				</label>
+	  	 				<input type="text" id="first" />
+	  	 			</div>
+	  	 			<div class="input-wrap">
+	  	 				<label for="second">
+	  	 					From
+	  	 				</label>
+	  	 				<input type="text" id="second" />
+	  	 			</div>
+	  	 			<div class="input-wrap">
+	  	 				<label for="third">
+	  	 					TO
+	  	 				</label>
+	  	 				<input type="text" id="third" />
+	  	 			</div>
+	  	 			<a href="#modal" id="button">Button</a>
+	  	 		</form>
+	  	 	</div>
+	  	 	<div class="col2">
+	  	 		<table width="100%">  
+				    <tr>  
+				        <td class="td-col-1">fixed</td>  
+				        <td class="td-col-2">fixed</td>  
+				        <td class="td-col-3">responsive</td>  
+				    </tr>  
+				</table>
+	  	 	</div>
+	  	 	<div class="col3">Колонка 3</div>
+	  	</div>
+	</div>
+  	<div class="footer">Footer</div>
+</body>
+</html>
